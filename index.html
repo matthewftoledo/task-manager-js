@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <h1>Task Manager</h1>
+      <p class="subtitle">Stay organized and keep track of your tasks.</p>
+
+      <section class="task-input-section">
+        <form id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Enter a task..."
+            autocomplete="off"
+          />
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+
+      <section class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </section>
+
+      <section class="task-list-section">
+        <ul id="task-list"></ul>
+      </section>
+    </main>
+  </body>
+</html>
